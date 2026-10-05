@@ -1,0 +1,71 @@
+%Error-PKGNODECL: processor_system.sv:28:11: Package/class 'decoder_pkg' not found, and needs to be predeclared (IEEE 1800-2023 26.3)
+   28 |    import decoder_pkg::*;
+      |           ^~~~~~~~~~~
+                  ... For error description see https://verilator.org/warn/PKGNODECL?v=5.032
+%Error: processor_system.sv:28:11: Importing from missing package 'decoder_pkg'
+   28 |    import decoder_pkg::*;
+      |           ^~~~~~~~~~~
+%Error: processor_system.sv:29:11: Importing from missing package 'peripheral_pkg'
+   29 |    import peripheral_pkg::*;
+      |           ^~~~~~~~~~~~~~
+%Error: Cannot find file containing module: 'alu_opcodes_pkg.sv'
+%Error: This may be because there's no search path specified with -I<dir>.
+        ... Looked in:
+             alu_opcodes_pkg.sv
+             alu_opcodes_pkg.sv.v
+             alu_opcodes_pkg.sv.sv
+             obj_dir/alu_opcodes_pkg.sv
+             obj_dir/alu_opcodes_pkg.sv.v
+             obj_dir/alu_opcodes_pkg.sv.sv
+%Error: Cannot find file containing module: 'bluster_pkg.sv'
+%Error: Cannot find file containing module: 'csr_pkg.sv'
+%Error: Cannot find file containing module: 'decoder_pkg.sv'
+%Error: Cannot find file containing module: 'memory_pkg.sv'
+%Error: Cannot find file containing module: 'peripheral_pkg.sv'
+%Error: alu.sv:9:11: Importing from missing package 'alu_opcodes_pkg'
+    9 |    import alu_opcodes_pkg::*;
+      |           ^~~~~~~~~~~~~~~
+%Error: bluster.sv:20:11: Importing from missing package 'memory_pkg'
+   20 |    import memory_pkg::INSTR_MEM_SIZE_BYTES;
+      |           ^~~~~~~~~~
+%Error: csr_controller.sv:21:11: Importing from missing package 'csr_pkg'
+   21 |    import csr_pkg::*;
+      |           ^~~~~~~
+%Error: data_mem.sv:2:8: Importing from missing package 'memory_pkg'
+    2 | import memory_pkg::DATA_MEM_SIZE_BYTES;
+      |        ^~~~~~~~~~
+%Error: data_mem.sv:3:8: Importing from missing package 'memory_pkg'
+    3 | import memory_pkg::DATA_MEM_SIZE_WORDS;
+      |        ^~~~~~~~~~
+%Error: decoder.sv:20:11: Importing from missing package 'decoder_pkg'
+   20 |    import decoder_pkg::*;
+      |           ^~~~~~~~~~~
+%Error: files.f:1:1: syntax error, unexpected IDENTIFIER
+    1 | alu_opcodes_pkg.sv
+      | ^~~~~~~~~~~~~~~
+%Error: init_data.mem:1:1: syntax error, unexpected '@'
+    1 | @00200000
+      | ^
+%Error: init_instr.mem:1:1: syntax error, unexpected '@'
+    1 | @00000000
+      | ^
+%Error: instr_mem.sv:2:8: Importing from missing package 'memory_pkg'
+    2 | import memory_pkg::INSTR_MEM_SIZE_BYTES;
+      |        ^~~~~~~~~~
+%Error: instr_mem.sv:3:8: Importing from missing package 'memory_pkg'
+    3 | import memory_pkg::INSTR_MEM_SIZE_WORDS;
+      |        ^~~~~~~~~~
+%Error: lsu.sv:24:11: Importing from missing package 'decoder_pkg'
+   24 |    import decoder_pkg::*;
+      |           ^~~~~~~~~~~
+%Error: processor_core.sv:19:11: Importing from missing package 'decoder_pkg'
+   19 |    import decoder_pkg::*;
+      |           ^~~~~~~~~~~
+%Error: rw_instr_mem.sv:2:8: Importing from missing package 'memory_pkg'
+    2 | import memory_pkg::INSTR_MEM_SIZE_BYTES;
+      |        ^~~~~~~~~~
+%Error: rw_instr_mem.sv:3:8: Importing from missing package 'memory_pkg'
+    3 | import memory_pkg::INSTR_MEM_SIZE_WORDS;
+      |        ^~~~~~~~~~
+%Error: Exiting due to 25 error(s)
+        ... See the manual at https://verilator.org/verilator_doc.html for more assistance.
