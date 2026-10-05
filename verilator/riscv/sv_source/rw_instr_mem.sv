@@ -14,9 +14,9 @@ module rw_instr_mem
   localparam string FILENAME = "rx_tx_test_instr.mem";
   logic [31:0] ROM [INSTR_MEM_SIZE_WORDS];
   
-  initial begin
+  /*initial begin
     $readmemh(FILENAME, ROM);
-  end
+  end*/
 
   assign read_data_o = ROM[read_addr_i[$clog2(INSTR_MEM_SIZE_BYTES)-1:2]];
 

@@ -1,4 +1,4 @@
-`include "alu_opcodes_pkg.sv"
+// `include "alu_opcodes_pkg.sv"
 module alu(
            input logic [31:0]  a_i,
            input logic [31:0]  b_i,
@@ -7,7 +7,7 @@ module alu(
            output logic [31:0] result_o
            );
 
-   // import alu_opcodes_pkg::*;
+   import alu_opcodes_pkg::*;
    logic                        carry_o;
    logic [31:0] sum;
 

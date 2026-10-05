@@ -1,5 +1,5 @@
 // `include "decoder_pkg.sv"
-`include "peripheral_pkg.sv"
+// `include "peripheral_pkg.sv"
 module processor_system
   (
    input logic         clk_i,

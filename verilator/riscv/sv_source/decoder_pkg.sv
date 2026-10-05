@@ -8,10 +8,10 @@
 See https://github.com/MPSU/APS/blob/master/LICENSE file for licensing details.
 * ------------------------------------------------------------------------------
 */
-`include "alu_opcodes_pkg.sv"
-`include "csr_pkg.sv"
 `ifndef DECODER_PKG
 `define DECODER_PKG
+`include "alu_opcodes_pkg.sv"
+`include "csr_pkg.sv"
 package decoder_pkg;
 
   // import alu_opcodes_pkg::*;

@@ -16,8 +16,6 @@ fulladder32.sv
 fulladder4.sv
 hex_digits.sv
 hex_sb_ctrl.sv
-init_data.mem
-init_instr.mem
 instr_mem.sv
 interrupt_controller.sv
 lsu.sv
